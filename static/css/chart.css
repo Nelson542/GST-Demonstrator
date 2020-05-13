@@ -1,8 +1,7 @@
 .chart
 {
-    margin-left: 370px;
-    margin-top: 20px;
-    width: 800px;
+    margin: auto;
+    width: 500px;
     height: 400px;
 
 }
@@ -10,18 +9,19 @@
 
 .wrap
 {
-background-color: #d1d1d1;
+    background-color: #d1d1d1;
 }
 
 #back
 {
-text-align :center;
+    text-align :center;
+    padding:10px;
 }
 
 
 .overlay
 {
-    background-color: #d1d1d1;
+    background-color: #6a6b6a;
 }
 
 
