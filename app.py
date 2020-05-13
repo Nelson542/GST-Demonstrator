@@ -41,7 +41,7 @@ def calculate():
 def itemdetails():
     con = sql.connect("new_database.db")
     cur = con.cursor()
-    cur.execute("SELECT * FROM gst_items ORDER BY Added_at DESC LIMIT 1")
+    cur.execute("SELECT * FROM gst_items ORDER BY ID DESC LIMIT 1")
     output = cur.fetchall()
     return render_template("itemdetails.html", output=output)
 

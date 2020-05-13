@@ -14,10 +14,10 @@
     <h1 style="text-align:center;padding:1%;font-family:Nova Square;font-size: 40px;color:#333;">Item Details</h1>
     <div class="wrap">
         {% for value in output %}
-            <p>Item Name:   &nbsp;&nbsp;{{ value[1] }} </p>
-            <p>Price:   &nbsp;&nbsp;{{ value[2] }} </p>
-            <p>GST %:   &nbsp;&nbsp;{{ value[3] }} </p>
-            <p>Price after GST:   &nbsp;&nbsp;{{ value[4] }} </p>
+            <p>Item Name:  {{ value[1] }} </p>
+            <p>Price:   &nbsp;{{ value[2] }} </p>
+            <p>GST %:   {{ value[3] }} </p>
+            <p>Price after GST:   {{ value[4] }} </p>
         {% endfor %}
     </div>
 
