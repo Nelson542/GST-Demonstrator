@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GST</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/chart.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Nova Square' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+     <script type="text/javascript" src="{{ url_for('static', filename='/js/chart.js') }}"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['GST_Slab', 'No of items'],
+          ['5%',     {{ slab1 }}],
+          ['12%',    {{ slab2 }}],
+          ['18%',    {{ slab3 }}],
+          ['28%',    {{ slab4 }}]
+        ]);
+
+        var options = {
+          title: '',
+          is3D: true,
+          backgroundColor: '#d1d1d1',
+
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+</head>
+<body class="wrap">
+ <h1 style="text-align:center;padding:2%;font-family:Nova Square;font-size: 40px;color:#333;">Pie Chart of GST Slabs</h1>
+        <div id="chart">
+              <div id="piechart_3d" class="chart"></div>
+              <div id="back">
+                  <form action="/">
+                      <div class="buttons">
+                        <input class="btn-hover color-8" style="text-align:center;font-family:Jura;color:#d1d1d1;" type="submit" value="Back to Home Page" />
+                      </div>
+                  </form>
+              </div>
+        </div>
+</body>
+</html>

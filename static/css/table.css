@@ -1,0 +1,135 @@
+.overlay
+{
+    background-color: #d1d1d1;
+}
+
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+table {
+  border: 0.1em solid #eee;
+  box-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.25);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75em;
+}
+
+th {
+  background: #3b3939;
+  color: #d1d1d1;
+  text-align: center;
+}
+
+tr {
+  &:not(.first) {
+    border-bottom: .10em solid #ddd;
+    color: #444;
+    cursor: pointer;
+    transition: all 150ms ease;
+
+    &:hover {
+      background: #333;
+      color: #000;
+    }
+  }
+}
+
+// MQ
+@media(max-width: 48.95em) {
+  tr *:last-child {
+    display: none;
+  }
+}
+
+@media(max-width: 35em){
+  header {
+    & > h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  tr *:nth-child(5){
+    display: none;
+  }
+
+  tr *:nth-child(1){
+    display: none;
+  }
+}
+
+
+
+#back
+{
+text-align :center;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 0%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}

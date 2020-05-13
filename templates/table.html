@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GST</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/table.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nova Square' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="overlay" >
+    <h1 style="text-align:center;padding:2%;font-family:Nova Square;font-size: 40px;color:#333;font-weight: 200;">Item Details</h1>
+    <div class="center">
+      <table style="width:1000px;">
+        <thead>
+          <tr class="first" style="text-align:center;font-family:Jura;color:#333;">
+            <th>Item ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Slab</th>
+            <th>GST Price</th>
+            <th>Added At</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for value in output %}
+            <tr style="text-align:center;font-family:Jura;color:#333;font-weight: 600;">
+                <td> {{ loop.length - (value[0]-1) }}</td>
+                <td> {{ value[1] }}</td>
+                <td> {{ value[2] }}</td>
+                <td> {{ value[3] }}</td>
+                <td> {{ value[4] }}</td>
+                <td> {{ value[5] }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+        <div id="back">
+            <form action="/">
+                <div class="buttons">
+                    <input class="btn-hover color-8" style="text-align:center;font-family:Jura;color:#d1d1d1;" type="submit" value="Back to Home Page" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

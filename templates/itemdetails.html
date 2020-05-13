@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GST</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/itemdetails.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Nova Square' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Changa' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="overlay">
+    <h1 style="text-align:center;padding:1%;font-family:Nova Square;font-size: 40px;color:#333;">Item Details</h1>
+    <div class="wrap">
+        {% for value in output %}
+        <p>Item Name:   &nbsp;&nbsp;{{ value[1] }} </p>
+        <p>Price:   &nbsp;&nbsp;{{ value[2] }} </p>
+        <p>GST %:   &nbsp;&nbsp;{{ value[3] }} </p>
+        <p>Price after GST:   &nbsp;&nbsp;{{ value[4] }} </p>
+        {% endfor %}
+    </div>
+
+    <div id="back">
+        <form action="/">
+            <div class="buttons">
+                <input class="btn-hover color-8" style="text-align:center;font-family:Jura;color:#d1d1d1;" type="submit" value="Back to Home Page" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

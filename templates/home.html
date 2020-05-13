@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GST</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/home.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nova Square' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="overlay" >
+    <h1 style="text-align:center;padding:4%;font-family:Nova Square;font-size: 60px;color:#333;">GST  DEMONSTRATOR</h1>
+    <form action="/calculate">
+        <div class="buttons" >
+            <input class="btn-hover color-8" style="text-align:center;font-family:Jura;color:#d1d1d1;" type="submit" value="Calculate GST Price" />
+        </div>
+    </form>
+
+    <form action="/table">
+        <div class="buttons">
+            <input class="btn-hover color-8" style="text-align:center;font-family:Jura;color:#d1d1d1;" type="submit" value="Items Table" />
+        </div>
+    </form>
+
+    <form action="/chart">
+        <div class="buttons">
+            <input class="btn-hover color-8" style="text-align:center;font-family:Jura;color:#d1d1d1;" type="submit" value="Pie Chart" />
+        </div>
+    </form>
+</body>
+</html>
