@@ -14,7 +14,19 @@
 
 @media only screen and (max-width: 600px) {
   .wrap {
-    padding-top: 50%;
+    padding-top: 27%;
+  }
+}
+
+h1
+{
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px;
   }
 }
 
