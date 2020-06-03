@@ -3,6 +3,14 @@
     background-color: #d1d1d1;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .overlay {
+    padding-top: 50%;
+  }
+}
+
+
 .wrap
 {
   width: 30%;
@@ -12,6 +20,14 @@
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: auto;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .wrap {
+    width: 80%;
+  }
+}
+
 
 p
 {

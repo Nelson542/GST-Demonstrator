@@ -12,6 +12,13 @@
     background-color: #d1d1d1;
 }
 
+@media only screen and (max-width: 600px) {
+  .wrap {
+    padding-top: 50%;
+  }
+}
+
+
 #back
 {
     text-align :center;

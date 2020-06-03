@@ -3,6 +3,24 @@
     background-color: #d1d1d1;
 }
 
+@media only screen and (max-width: 600px) {
+  .overlay {
+    padding-top: 50%;
+  }
+}
+
+h1
+{
+    font-size: 60px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
 
 * {
     -webkit-box-sizing: border-box;

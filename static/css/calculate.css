@@ -21,15 +21,9 @@
 
 
 
-@media (min-width: 576px) {
+@media only screen and (max-width: 600px) {
   .overlay {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .overlay {
-    max-width: 720px;
+    padding-top: 50%;
   }
 }
 
