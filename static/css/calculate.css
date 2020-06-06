@@ -15,7 +15,7 @@
 .overlay
 {
     background-color: #d1d1d1;
-    width: 50%;
+    width: 30%;
     margin: 3.125rem auto 0 auto;
 }
 
@@ -24,6 +24,7 @@
 @media only screen and (max-width: 600px) {
   .overlay {
     padding-top: 3%;
+    width: 100%;
   }
 }
 
