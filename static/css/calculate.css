@@ -14,9 +14,9 @@
 
 .overlay
 {
-    background: #4B79A1;
-    background: -webkit-linear-gradient(to left, #4B79A1 , #db7f85);
-    background: linear-gradient(to left, #4B79A1 , #db7f85);
+    background: #265394;
+    background: -webkit-linear-gradient(to left, #265394 , #8da0ba);
+    background: linear-gradient(to left, #265394 , #8da0ba);
     width: 30%;
     margin: 3.125rem auto 0 auto;
 }

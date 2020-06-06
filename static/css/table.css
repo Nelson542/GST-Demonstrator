@@ -1,8 +1,8 @@
 .overlay
 {
-    background: #4B79A1;
-    background: -webkit-linear-gradient(to left, #4B79A1 , #db7f85);
-    background: linear-gradient(to left, #4B79A1 , #db7f85);
+    background: #265394;
+    background: -webkit-linear-gradient(to left, #265394 , #8da0ba);
+    background: linear-gradient(to left, #265394 , #8da0ba);
 }
 
 
@@ -23,7 +23,7 @@ table caption {
 }
 
 table tr {
-  background-color: #bacfcc;
+  background-color: #858585;
   border: 1px solid #333;
   padding: .35em;
 }
@@ -62,13 +62,13 @@ table th {
   }
 
   table tr {
-    border-bottom: 3px solid #ddd;
+    border-bottom: 3px solid #333;
     display: block;
     margin-bottom: .625em;
   }
 
   table td {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #c3c3c3;
     display: block;
     font-size: .8em;
     text-align: right;
