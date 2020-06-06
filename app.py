@@ -23,8 +23,11 @@ def calculate():
         price = things['price']
         slab = things['slab']
 
-        gst_price = ((int(slab)/100)*float(price)) + float(price)
-        gst_price = float("{:.2f}".format(gst_price))
+        if (price.isnumeric()) == True:
+            gst_price = ((int(slab)/100)*float(price)) + float(price)
+            gst_price = float("{:.2f}".format(gst_price))
+        else:
+            return redirect("/calculate")
 
         con = sql.connect("new_database.db")
         cur = con.cursor()
