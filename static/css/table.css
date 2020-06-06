@@ -4,83 +4,89 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-  .overlay {
-    padding-top: 50%;
-  }
-}
-
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-
-
-.center {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 table {
-  border: 0.1em solid #eee;
-  box-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #ccc;
   border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  table-layout: fixed;
+  margin: auto;
 }
 
-th,
-td {
-  padding: 0.75em;
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
 }
 
-th {
-  background: #3b3939;
-  color: #d1d1d1;
+table tr {
+  background-color: #c3c3c3;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
   text-align: center;
 }
 
-tr {
-  &:not(.first) {
-    border-bottom: .10em solid #ddd;
-    color: #444;
-    cursor: pointer;
-    transition: all 150ms ease;
-
-    &:hover {
-      background: #333;
-      color: #000;
-    }
-  }
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: #333;
 }
 
-// MQ
-@media(max-width: 48.95em) {
-  tr *:last-child {
-    display: none;
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
   }
 }
-
-@media(max-width: 35em){
-  header {
-    & > h1 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-
-  tr *:nth-child(5){
-    display: none;
-  }
-
-  tr *:nth-child(1){
-    display: none;
-  }
-}
-
-
 
 #back
 {

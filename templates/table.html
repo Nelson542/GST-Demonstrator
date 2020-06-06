@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>GST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/table.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Nova Square' rel='stylesheet' type='text/css'>
@@ -15,13 +17,13 @@
 
     <div class="center">
 
-      <table style="width:1000px;">
+      <table >
         <thead>
-          <tr class="first" style="text-align:center;font-family:Jura;color:#333;">
+          <tr class="first" style="text-align:center;font-family:Jura;color:#c3c3c3;">
             <th>Item ID</th>
             <th>Name</th>
             <th>Price</th>
-            <th>Slab</th>
+            <th>Slab %</th>
             <th>GST Price</th>
             <th>Added At</th>
           </tr>
@@ -29,12 +31,12 @@
         <tbody>
           {% for value in output %}
             <tr style="text-align:center;font-family:Jura;color:#333;font-weight: 600;">
-                <td> {{ loop.length - (value[0]-1) }}</td>
-                <td> {{ value[1] }}</td>
-                <td> {{ value[2] }}</td>
-                <td> {{ value[3] }}</td>
-                <td> {{ value[4] }}</td>
-                <td> {{ value[5] }}</td>
+                <td scope="row" data-label="Item ID"> {{ loop.length - (value[0]-1) }}</td>
+                <td data-label="Name"> {{ value[1] }}</td>
+                <td data-label="Price"> {{ value[2] }}</td>
+                <td data-label="Slab %"> {{ value[3] }}</td>
+                <td data-label="GST Price"> {{ value[4] }}</td>
+                <td data-label="Added At"> {{ value[5] }}</td>
             </tr>
           {% endfor %}
         </tbody>
