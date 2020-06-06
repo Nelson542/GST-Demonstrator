@@ -1,6 +1,8 @@
 .overlay
 {
-    background-color: #d1d1d1;
+    background: #4B79A1;
+    background: -webkit-linear-gradient(to left, #4B79A1 , #db7f85);
+    background: linear-gradient(to left, #4B79A1 , #db7f85);
 }
 
 @media only screen and (max-width: 600px) {

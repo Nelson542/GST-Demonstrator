@@ -1,6 +1,8 @@
 .overlay
 {
-    background-color: #d1d1d1;
+    background: #4B79A1;
+    background: -webkit-linear-gradient(to left, #4B79A1 , #db7f85);
+    background: linear-gradient(to left, #4B79A1 , #db7f85);
 }
 
 
@@ -15,9 +17,9 @@
 {
   width: 30%;
   padding: 10px 10px 20px 10px;
-  border: 1px solid #BFBFBF;
+  border: 1px solid #3b3939;
   background-color: #3b3939;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 10px 10px 5px #666;
   margin: auto;
 }
 

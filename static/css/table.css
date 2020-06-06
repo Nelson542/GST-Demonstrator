@@ -1,12 +1,14 @@
 .overlay
 {
-    background-color: #d1d1d1;
+    background: #4B79A1;
+    background: -webkit-linear-gradient(to left, #4B79A1 , #db7f85);
+    background: linear-gradient(to left, #4B79A1 , #db7f85);
 }
 
 
 
 table {
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-collapse: collapse;
   margin: 0;
   padding: 0;
@@ -21,8 +23,8 @@ table caption {
 }
 
 table tr {
-  background-color: #c3c3c3;
-  border: 1px solid #ddd;
+  background-color: #bacfcc;
+  border: 1px solid #333;
   padding: .35em;
 }
 
